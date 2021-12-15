@@ -1,0 +1,987 @@
+DEBUT
+INITIALISATION go, partie
+INITIALISATION modele_tableau 3x3 (1,2,3,4,5,6,7,8,9)
+ECRIRE régles
+AFFICHER modele_tableau
+ECRIRE pour commencer la partie taper 1
+LIRE go
+SI go=1
+    INITIALISATION nom, nom2
+    ECRIRE nom 1 ?
+    LIRE nom
+    ECRIRE nom 2 ?
+    LIRE nom2
+        
+TANT QUE go=1
+    INITIALISATION modedejeu, joueur=1, niv, choix, jeu_tableau 3x3 (vide)
+    ECRIRE choix du mode : 1 solo, 2 multi 
+    FAIRE 
+        ECRIRE quel est votre choix ?
+        LIRE modedejeu
+    TANT QUE modedejeu non compris entre 1 et 2
+
+    EFFACER ECRAN
+    SWITCH modedejeu
+        CAS 1
+            FAIRE 
+                ECRIRE choix de niveau difficulté : 1, 2 , 3
+                LIRE niv
+            TANT QUE niv non compris entre 1 et 3
+    
+            SWITCH niv
+                CAS 1 
+                    TANT QUE niv = 1
+                        ECRIRE c'est au tour du joueur "nom"
+                        SI joueur = 1 
+                            LIRE choix
+                        SINON 
+                            Choix prend une valeur aléatoire entre 1 et 9
+                        FIN SI
+                        SWITCH choix
+                            CAS 1
+                                SI joueur = 1
+                                    SI  jeu_tableau case 1 est vide
+                                        case 1 = X
+                                        joueur = 2
+                                        EFFACER ECRAN
+                                    SINON
+                                        EFFACER ECRAN
+                                        ECRIRE erreur, il y  a deja une valeur
+                                    FIN SI
+                                SINON 
+                                    SI jeu_tableau case 1 est vide
+                                        case 1 = O
+                                        joueur = 1
+                                        EFFACER ECRAN
+                                    SINON
+                                        EFFACER ECRAN
+                                        ECRIRE erreur il y a deja une valeur 
+                                    FIN SI
+                                FIN SI  
+                            
+                            CAS 2 
+                                SI joueur = 1
+                                    SI  jeu_tableau case 2 est vide
+                                        case 2 = X
+                                        joueur = 2
+                                        EFFACER ECRAN
+                                    SINON
+                                        EFFACER ECRAN
+                                        ECRIRE erreur, il y  a deja une valeur
+                                    FIN SI
+                                SINON 
+                                    SI jeu_tableau case 2 est vide
+                                        case 2 = O
+                                        joueur = 1
+                                        EFFACER ECRAN
+                                    SINON
+                                        EFFACER ECRAN
+                                        ECRIRE erreur il y a deja une valeur 
+                                    FIN SI
+                                FIN SI  
+
+                            CAS 3
+                                SI joueur = 1
+                                    SI  jeu_tableau case 3 est vide
+                                        case 3 = X
+                                        joueur = 2
+                                        EFFACER ECRAN
+                                    SINON
+                                        EFFACER ECRAN
+                                        ECRIRE erreur, il y  a deja une valeur
+                                    FIN SI
+                                SINON 
+                                    SI jeu_tableau case 3 est vide
+                                        case 3 = O
+                                        joueur = 1
+                                        EFFACER ECRAN
+                                    SINON
+                                        EFFACER ECRAN
+                                        ECRIRE erreur il y a deja une valeur 
+                                    FIN SI
+                                FIN SI  
+
+                            CAS 4
+                                SI joueur = 1
+                                    SI  jeu_tableau case 4 est vide
+                                        case 4 = X
+                                        joueur = 2
+                                        EFFACER ECRAN
+                                    SINON
+                                        EFFACER ECRAN
+                                        ECRIRE erreur, il y  a deja une valeur
+                                    FIN SI
+                                SINON 
+                                    SI jeu_tableau case 1 est vide
+                                        case 4 = O
+                                        joueur = 1
+                                        EFFACER ECRAN
+                                    SINON
+                                        EFFACER ECRAN
+                                        ECRIRE erreur il y a deja une valeur 
+                                    FIN SI
+                                FIN SI  
+
+                            CAS 5
+                                SI joueur = 1
+                                    SI  jeu_tableau case 5 est vide
+                                        case 5 = X
+                                        joueur = 2
+                                        EFFACER ECRAN
+                                    SINON
+                                        EFFACER ECRAN
+                                        ECRIRE erreur, il y  a deja une valeur
+                                    FIN SI
+                                SINON 
+                                    SI jeu_tableau case 5 est vide
+                                        case 5 = O
+                                        joueur = 1
+                                        EFFACER ECRAN
+                                    SINON
+                                        EFFACER ECRAN
+                                        ECRIRE erreur il y a deja une valeur 
+                                    FIN SI
+                                FIN SI  
+
+                            CAS 6
+                                SI joueur = 1
+                                    SI  jeu_tableau case 6 est vide
+                                        case 6 = X
+                                        joueur = 2
+                                        EFFACER ECRAN
+                                    SINON
+                                        EFFACER ECRAN
+                                        ECRIRE erreur, il y  a deja une valeur
+                                    FIN SI
+                                SINON 
+                                    SI jeu_tableau case 6 est vide
+                                        case 6 = O
+                                        joueur = 1
+                                        EFFACER ECRAN
+                                    SINON
+                                        EFFACER ECRAN
+                                        ECRIRE erreur il y a deja une valeur 
+                                    FIN SI
+                                FIN SI  
+
+                            CAS 7
+                                SI joueur = 1
+                                    SI  jeu_tableau case 7 est vide
+                                        case 7 = X
+                                        joueur = 2
+                                        EFFACER ECRAN
+                                    SINON
+                                        EFFACER ECRAN
+                                        ECRIRE erreur, il y  a deja une valeur
+                                    FIN SI
+                                SINON 
+                                    SI jeu_tableau case 7 est vide
+                                        case 7 = O
+                                        joueur = 1
+                                        EFFACER ECRAN
+                                    SINON
+                                        EFFACER ECRAN
+                                        ECRIRE erreur il y a deja une valeur 
+                                    FIN SI
+                                FIN SI      
+
+                            CAS 8
+                                SI joueur = 1
+                                    SI  jeu_tableau case 8 est vide
+                                        case 8 = X
+                                        joueur = 2
+                                        EFFACER ECRAN
+                                    SINON
+                                        EFFACER ECRAN
+                                        ECRIRE erreur, il y  a deja une valeur
+                                    FIN SI
+                                SINON 
+                                    SI jeu_tableau case 8 est vide
+                                        case 8 = O
+                                        joueur = 1
+                                        EFFACER ECRAN
+                                    SINON
+                                        EFFACER ECRAN
+                                        ECRIRE erreur il y a deja une valeur 
+                                    FIN SI
+                                FIN SI  
+
+                            CAS 9
+                                SI joueur = 1
+                                    SI  jeu_tableau case 9 est vide
+                                        case 9 = X
+                                        joueur = 2
+                                        EFFACER ECRAN
+                                    SINON
+                                        EFFACER ECRAN
+                                        ECRIRE erreur, il y  a deja une valeur
+                                    FIN SI
+                                SINON 
+                                    SI jeu_tableau case 9 est vide
+                                        case 9 = O
+                                        joueur = 1
+                                        EFFACER ECRAN
+                                    SINON
+                                        EFFACER ECRAN
+                                        ECRIRE erreur il y a deja une valeur 
+                                    FIN SI
+                                FIN SI 
+                            PAR DEFAUT
+                                EFFACER ECRAN
+                                ECRIRE La valeur saisie est eronee veuiller recommencer
+                        FIN SWITCH                   
+                        LIRE modèle_tableau
+                        ECRIRE Saisir le nombre de la case pour saisir votre choix
+                        ECRIRE jeu_tableau
+                        SI 3 "X" sont alignés dans jeu_tableau
+                            ECRIRE Le joueur 1 gagne
+                            niv = 0
+                            go = 0
+                            ECRIRE Pour recommencer le jeu saisir 1 :
+                            LIRE go
+                            REINITIALISER jeu_tableau
+                        
+                        SINON SI 3 "O" sont alignés dans jeu_tableau
+                            ECRIRE Le joueur 2 gagne
+                            niv = 0
+                            go = 0
+                            ECRIRE Pour recommencer le jeu saisir 1 :
+                            LIRE go
+                            REINITIALISER jeu_tableau
+                        
+                        SINON SI il n'y a ni 3 "X" et ni 3 "O" alignés et que les cases soient remplies
+                            ECRIRE Match nul ! 
+                            niv = 0
+                            go = 0
+                            ECRIRE Pour recommencer le jeu saisir 1 :
+                            LIRE go
+                            REINITIALISER jeu_tableau
+                        FIN SI         
+                CAS 2 
+                    TANT QUE niv=2
+                        ECRIRE  C'est au tour du joueur "nom"
+                        SI joueur=1
+                            LIRE choix
+                        SINON  
+                            SI case 1 est vide et que les 2 cases à côté = "X" ou dans la diagonale les 2 cases en diagonale = "X"
+                                choix =1
+                            SINON SI case 2 est vide et que les 2 cases à côté = "X"
+                                choix = 2
+                            SINON SI case 3 est vide et que les 2 cases à côté = "X" ou dans la diagonale les 2 cases en diagonale = "X"
+                                choix =3
+                            SINON SI case 4 est vide et que les 2 cases à côté = "X"
+                                choix =4
+                            SINON SI case 5 est vide et que les 2 cases à côté = "X" ou dans les diagonales les 2 cases en diagonale = "X"
+                                choix =5
+                            SINON SI case 6 est vide et que les 2 cases à côté = "X" 
+                                choix =6
+                            SINON SI case 7 est vide et que les 2 cases à côté = "X" ou dans la diagonale les 2 cases en diagonale = "X"  
+                                choix =7
+                            SINON SI case 8 est vide et que les 2 cases à côté = "X"
+                                choix =8
+                            SINON SI case 9 est vide et que les 2 cases à côté = "X" ou dans la diagonale les 2 cases en diagonale = "X"   
+                                choix =9
+                            SINON
+                                Choix prend une valeur aléatoire entre 1 et 9  
+                            FIN SI 
+                        FIN SI 
+                                 
+                        SWITCH choix
+                            CAS 1
+                            SI joueur = 1
+                                SI  jeu_tableau case 1 est vide
+                                    case 1 = X
+                                    joueur = 2
+                                    EFFACER ECRAN
+                                SINON
+                                    EFFACER ECRAN
+                                    ECRIRE erreur, il y  a deja une valeur
+                                FIN SI
+                            SINON 
+                                SI jeu_tableau case 1 EST VIDE
+                                    case 1 = O
+                                    joueur = 1
+                                    EFFACER ECRAN
+                                SINON
+                                    EFFACER ECRAN
+                                    ECRIRE erreur il y a deja une valeur 
+                                FIN SI
+                            FIN SI  
+                            
+                            CAS 2 
+                            SI joueur = 1
+                                SI  jeu_tableau case 2 est vide
+                                    case 2 = X
+                                    joueur = 2
+                                    EFFACER ECRAN
+                                SINON
+                                    EFFACER ECRAN
+                                    ECRIRE erreur, il y  a deja une valeur
+                                FIN SI
+                            SINON 
+                                SI jeu_tableau case 2 EST VIDE
+                                    case 2 = O
+                                    joueur = 1
+                                    EFFACER ECRAN
+                                SINON
+                                    EFFACER ECRAN
+                                    ECRIRE erreur il y a deja une valeur 
+                                FIN SI
+                            FIN SI  
+
+                            CAS 3
+                            SI joueur = 1
+                                SI  jeu_tableau case 3 est vide
+                                    case 3 = X
+                                    joueur = 2
+                                    EFFACER ECRAN
+                                SINON
+                                    EFFACER ECRAN
+                                    ECRIRE erreur, il y  a deja une valeur
+                                FIN SI
+                            SINON 
+                                SI jeu_tableau case 3 EST VIDE
+                                    case 3 = O
+                                    joueur = 1
+                                    EFFACER ECRAN
+                                SINON
+                                    EFFACER ECRAN
+                                    ECRIRE erreur il y a deja une valeur 
+                                FIN SI
+                            FIN SI  
+
+                            CAS 4
+                            SI joueur = 1
+                                SI  jeu_tableau case 4 est vide
+                                    case 4 = X
+                                    joueur = 2
+                                    EFFACER ECRAN
+                                SINON
+                                    EFFACER ECRAN
+                                    ECRIRE erreur, il y  a deja une valeur
+                                FIN SI
+                            SINON 
+                                SI jeu_tableau case 1 EST VIDE
+                                    case 4 = O
+                                    joueur = 1
+                                    EFFACER ECRAN
+                                SINON
+                                    EFFACER ECRAN
+                                    ECRIRE erreur il y a deja une valeur 
+                                FIN SI
+                            FIN SI  
+
+                            CAS 5
+                            SI joueur = 1
+                                SI  jeu_tableau case 5 est vide
+                                    case 5 = X
+                                    joueur = 2
+                                    EFFACER ECRAN
+                                SINON
+                                    EFFACER ECRAN
+                                    ECRIRE erreur, il y  a deja une valeur
+                                FIN SI
+                            SINON 
+                                SI jeu_tableau case 5 EST VIDE
+                                    case 5 = O
+                                    joueur = 1
+                                    EFFACER ECRAN
+                                SINON
+                                    EFFACER ECRAN
+                                    ECRIRE erreur il y a deja une valeur 
+                                FIN SI
+                            FIN SI  
+
+                            CAS 6
+                            SI joueur = 1
+                                SI  jeu_tableau case 6 est vide
+                                    case 6 = X
+                                    joueur = 2
+                                    EFFACER ECRAN
+                                SINON
+                                    EFFACER ECRAN
+                                    ECRIRE erreur, il y  a deja une valeur
+                                FIN SI
+                            SINON 
+                                SI jeu_tableau case 6 EST VIDE
+                                    case 6 = O
+                                    joueur = 1
+                                    EFFACER ECRAN
+                                SINON
+                                    EFFACER ECRAN
+                                    ECRIRE erreur il y a deja une valeur 
+                                FIN SI
+                            FIN SI  
+
+                            CAS 7
+                            SI joueur = 1
+                                SI  jeu_tableau case 7 est vide
+                                    case 7 = X
+                                    joueur = 2
+                                    EFFACER ECRAN
+                                SINON
+                                    EFFACER ECRAN
+                                    ECRIRE erreur, il y  a deja une valeur
+                                FIN SI
+                            SINON 
+                                SI jeu_tableau case 7 EST VIDE
+                                    case 7 = O
+                                    joueur = 1
+                                    EFFACER ECRAN
+                                SINON
+                                    EFFACER ECRAN
+                                    ECRIRE erreur il y a deja une valeur 
+                                FIN SI
+                            FIN SI      
+
+                            CAS 8
+                            SI joueur = 1
+                                SI  jeu_tableau case 8 est vide
+                                    case 8 = X
+                                    joueur = 2
+                                    EFFACER ECRAN
+                                SINON
+                                    EFFACER ECRAN
+                                    ECRIRE erreur, il y  a deja une valeur
+                                FIN SI
+                            SINON 
+                                SI jeu_tableau case 8 EST VIDE
+                                    case 8 = O
+                                    joueur = 1
+                                    EFFACER ECRAN
+                                SINON
+                                    EFFACER ECRAN
+                                    ECRIRE erreur il y a deja une valeur 
+                                FIN SI
+                            FIN SI  
+
+                            CAS 9
+                            SI joueur = 1
+                                SI  jeu_tableau case 9 est vide
+                                    case 9 = X
+                                    joueur = 2
+                                    EFFACER ECRAN
+                                SINON
+                                    EFFACER ECRAN
+                                    ECRIRE erreur, il y  a deja une valeur
+                                FIN SI
+                            SINON 
+                                SI jeu_tableau case 9 EST VIDE
+                                    case 9 = O
+                                    joueur = 1
+                                    EFFACER ECRAN
+                                SINON
+                                    EFFACER ECRAN
+                                    ECRIRE erreur il y a deja une valeur 
+                                FIN SI
+                            FIN SI 
+                        DEFAUT:
+                            EFFACER ECRAN
+                            ECRIRE La valeur saisie est eronee veuiller recommencer
+                        FIN SWITCH     
+    
+                        LIRE modèle_tableau
+                        ECRIRE Saisir le nombre de la case pour saisir votre choix
+                        ECRIRE jeu_tableau
+                        
+                        SI 3 "X" sont alignés dans jeu_tableau
+                            ECRIRE Le joueur 1 gagne
+                            niv = 0
+                            go = 0
+                            ECRIRE Pour recommencer le jeu saisir 1 :
+                            LIRE go
+                            REINITIALISER jeu_tableau
+                        
+                        SINON SI 3 "O" sont alignés dans jeu_tableau
+                            ECRIRE Le joueur 2 gagne
+                            niv = 0
+                            go = 0
+                            ECRIRE Pour recommencer le jeu saisir 1 :
+                            LIRE go
+                            REINITIALISER jeu_tableau
+                        
+                        SINON SI il n'y a ni 3 "X" et ni 3 "O" alignés et que les cases soient remplies
+                            ECRIRE Match nul ! 
+                            niv = 0
+                            go = 0
+                            ECRIRE Pour recommencer le jeu saisir 1 :
+                            LIRE go
+                            REINITIALISER jeu_tableau
+                        
+                        FIN SI
+
+                    /* un bot qui essaye de gagner  */
+
+                        TANT QUE niv=3
+                            ECRIRE  C'est au tour du joueur "nom"
+                            SI joueur=1
+                                LIRE choix
+                            SINON  
+                                SI case 1 est vide et que les 2 cases à côté = "X" ou dans la diagonale les 2 cases en diagonale = "X"
+                                    ou que les 2 cases à côté = "O" ou dans la diagonale les 2 cases en diagonale = "O"
+                                        choix =1
+                                SINON SI case 2 est vide et que les 2 cases à côté = "X"
+                                    ou que les 2 cases à côté = "O"
+                                        choix = 2
+                                SINON SI case 3 est vide et que les 2 cases à côté = "X" ou dans la diagonale les 2 cases en diagonale = "X"
+                                    ou que les 2 cases à côté = "O" ou dans la diagonale les 2 cases en diagonale = "O"
+                                        choix =3
+                                SINON SI case 4 est vide et que les 2 cases à côté = "X"
+                                    ou que les 2 cases à côté = "O"
+                                        choix =4
+                                SINON SI case 5 est vide et que les 2 cases à côté = "X" ou dans les diagonales les 2 cases en diagonale = "X"
+                                    ou que les 2 cases à côté = "O" ou dans la diagonale les 2 cases en diagonale = "O"
+                                        choix =5
+                                SINON SI case 6 est vide et que les 2 cases à côté = "X" 
+                                    ou que les 2 cases à côté = "O"
+                                        choix =6
+                                SINON SI case 7 est vide et que les 2 cases à côté = "X" ou dans la diagonale les 2 cases en diagonale = "X"  
+                                    ou que les 2 cases à côté = "O" ou dans la diagonale les 2 cases en diagonale = "O"
+                                        choix =7
+                                SINON SI case 8 est vide et que les 2 cases à côté = "X"
+                                    ou que les 2 cases à côté = "O"
+                                        choix =8
+                                SINON SI case 9 est vide et que les 2 cases à côté = "X" ou dans la diagonale les 2 cases en diagonale = "X"  
+                                    ou que les 2 cases à côté = "O" ou dans la diagonale les 2 cases en diagonale = "O" 
+                                        choix =9
+                                SINON
+                                    Choix prend une valeur aléatoire entre 1 et 9    
+                                FIN SI
+                            FIN SI 
+
+                            SWITCH choix
+                                CAS 1
+                                SI joueur = 1
+                                    SI  jeu_tableau case 1 est vide
+                                        case 1 = X
+                                        joueur = 2
+                                        EFFACER ECRAN
+                                    SINON
+                                        EFFACER ECRAN
+                                        ECRIRE erreur, il y  a deja une valeur
+                                    FIN SI
+                                SINON 
+                                    SI jeu_tableau case 1 EST VIDE
+                                        case 1 = O
+                                        joueur = 1
+                                        EFFACER ECRAN
+                                    SINON
+                                        EFFACER ECRAN
+                                        ECRIRE erreur il y a deja une valeur 
+                                    FIN SI
+                                FIN SI  
+                                
+                                CAS 2 
+                                SI joueur = 1
+                                    SI  jeu_tableau case 2 est vide
+                                        case 2 = X
+                                        joueur = 2
+                                        EFFACER ECRAN
+                                    SINON
+                                        EFFACER ECRAN
+                                        ECRIRE erreur, il y  a deja une valeur
+                                    FIN SI
+                                SINON 
+                                    SI jeu_tableau case 2 EST VIDE
+                                        case 2 = O
+                                        joueur = 1
+                                        EFFACER ECRAN
+                                    SINON
+                                        EFFACER ECRAN
+                                        ECRIRE erreur il y a deja une valeur 
+                                    FIN SI
+                                FIN SI  
+
+                                CAS 3
+                                SI joueur = 1
+                                    SI  jeu_tableau case 3 est vide
+                                        case 3 = X
+                                        joueur = 2
+                                        EFFACER ECRAN
+                                    SINON
+                                        EFFACER ECRAN
+                                        ECRIRE erreur, il y  a deja une valeur
+                                    FIN SI
+                                SINON 
+                                    SI jeu_tableau case 3 EST VIDE
+                                        case 3 = O
+                                        joueur = 1
+                                        EFFACER ECRAN
+                                    SINON
+                                        EFFACER ECRAN
+                                        ECRIRE erreur il y a deja une valeur 
+                                    FIN SI
+                                FIN SI  
+
+                                CAS 4
+                                SI joueur = 1
+                                    SI  jeu_tableau case 4 est vide
+                                        case 4 = X
+                                        joueur = 2
+                                        EFFACER ECRAN
+                                    SINON
+                                        EFFACER ECRAN
+                                        ECRIRE erreur, il y  a deja une valeur
+                                    FIN SI
+                                SINON 
+                                    SI jeu_tableau case 1 EST VIDE
+                                        case 4 = O
+                                        joueur = 1
+                                        EFFACER ECRAN
+                                    SINON
+                                        EFFACER ECRAN
+                                        ECRIRE erreur il y a deja une valeur 
+                                    FIN SI
+                                FIN SI  
+
+                                CAS 5
+                                SI joueur = 1
+                                    SI  jeu_tableau case 5 est vide
+                                        case 5 = X
+                                        joueur = 2
+                                        EFFACER ECRAN
+                                    SINON
+                                        EFFACER ECRAN
+                                        ECRIRE erreur, il y  a deja une valeur
+                                    FIN SI
+                                SINON 
+                                    SI jeu_tableau case 5 EST VIDE
+                                        case 5 = O
+                                        joueur = 1
+                                        EFFACER ECRAN
+                                    SINON
+                                        EFFACER ECRAN
+                                        ECRIRE erreur il y a deja une valeur 
+                                    FIN SI
+                                FIN SI  
+
+                                CAS 6
+                                SI joueur = 1
+                                    SI  jeu_tableau case 6 est vide
+                                        case 6 = X
+                                        joueur = 2
+                                        EFFACER ECRAN
+                                    SINON
+                                        EFFACER ECRAN
+                                        ECRIRE erreur, il y  a deja une valeur
+                                    FIN SI
+                                SINON 
+                                    SI jeu_tableau case 6 EST VIDE
+                                        case 6 = O
+                                        joueur = 1
+                                        EFFACER ECRAN
+                                    SINON
+                                        EFFACER ECRAN
+                                        ECRIRE erreur il y a deja une valeur 
+                                    FIN SI
+                                FIN SI  
+
+                                CAS 7
+                                SI joueur = 1
+                                    SI  jeu_tableau case 7 est vide
+                                        case 7 = X
+                                        joueur = 2
+                                        EFFACER ECRAN
+                                    SINON
+                                        EFFACER ECRAN
+                                        ECRIRE erreur, il y  a deja une valeur
+                                    FIN SI
+                                SINON 
+                                    SI jeu_tableau case 7 EST VIDE
+                                        case 7 = O
+                                        joueur = 1
+                                        EFFACER ECRAN
+                                    SINON
+                                        EFFACER ECRAN
+                                        ECRIRE erreur il y a deja une valeur 
+                                    FIN SI
+                                FIN SI      
+
+                                CAS 8
+                                SI joueur = 1
+                                    SI  jeu_tableau case 8 est vide
+                                        case 8 = X
+                                        joueur = 2
+                                        EFFACER ECRAN
+                                    SINON
+                                        EFFACER ECRAN
+                                        ECRIRE erreur, il y  a deja une valeur
+                                    FIN SI
+                                SINON 
+                                    SI jeu_tableau case 8 EST VIDE
+                                        case 8 = O
+                                        joueur = 1
+                                        EFFACER ECRAN
+                                    SINON
+                                        EFFACER ECRAN
+                                        ECRIRE erreur il y a deja une valeur 
+                                    FIN SI
+                                FIN SI  
+
+                                CAS 9
+                                SI joueur = 1
+                                    SI  jeu_tableau case 9 est vide
+                                        case 9 = X
+                                        joueur = 2
+                                        EFFACER ECRAN
+                                    SINON
+                                        EFFACER ECRAN
+                                        ECRIRE erreur, il y  a deja une valeur
+                                    FIN SI
+                                SINON 
+                                    SI jeu_tableau case 9 EST VIDE
+                                        case 9 = O
+                                        joueur = 1
+                                        EFFACER ECRAN
+                                    SINON
+                                        EFFACER ECRAN
+                                        ECRIRE erreur il y a deja une valeur 
+                                    FIN SI
+                                FIN SI 
+                            DEFAUT:
+                                EFFACER ECRAN
+                                ECRIRE La valeur saisie est eronee veuiller recommencer
+                            FIN SWITCH     
+                            ECRIRE Modèle
+                            LIRE modèletableau
+                            ECRIRE Saisir le nombre de la case pour saisir votre choix
+                            ECRIRE jeu_tableau
+
+        TANT QUE modedejeu =2
+            SI joueur = 1
+                ECRIRE C'est au tour du joueur "nom"
+                ECRIRE JOUEZ !
+                ECRIRE Veuillez saisir le numero de la case
+
+           SINON SI joueur = 2
+                ECRIRE C'est au tour du joueur "nom2"
+                ECRIRE JOUEZ !
+                ECRIRE Veuillez saisir le numero de la case
+            FIN SI
+            LIRE choix
+            SWITCH choix
+        CAS 1
+            SI joueur = 1
+                SI  jeu_tableau case 1 est vide
+                    case 1 = X
+                    joueur = 2
+                    EFFACER ECRAN
+                SINON
+                    EFFACER ECRAN
+                    ECRIRE erreur, il y  a deja une valeur
+                FIN SI
+            SINON 
+                SI jeu_tableau case 1 EST VIDE
+                    case 1 = O
+                    joueur = 1
+                    EFFACER ECRAN
+                SINON
+                    EFFACER ECRAN
+                    ECRIRE erreur il y a deja une valeur 
+                FIN SI
+            FIN SI  
+            
+        CAS 2 
+            SI joueur = 1
+                SI  jeu_tableau case 2 est vide
+                    case 2 = X
+                    joueur = 2
+                    EFFACER ECRAN
+                SINON
+                    EFFACER ECRAN
+                    ECRIRE erreur, il y  a deja une valeur
+                FIN SI
+            SINON 
+                SI jeu_tableau case 2 EST VIDE
+                    case 2 = O
+                    joueur = 1
+                    EFFACER ECRAN
+                SINON
+                    EFFACER ECRAN
+                    ECRIRE erreur il y a deja une valeur 
+                FIN SI
+            FIN SI  
+
+        CAS 3
+            SI joueur = 1
+                SI  jeu_tableau case 3 est vide
+                    case 3 = X
+                    joueur = 2
+                    EFFACER ECRAN
+                SINON
+                    EFFACER ECRAN
+                    ECRIRE erreur, il y  a deja une valeur
+                FIN SI
+            SINON 
+                SI jeu_tableau case 3 EST VIDE
+                    case 3 = O
+                    joueur = 1
+                    EFFACER ECRAN
+                SINON
+                    EFFACER ECRAN
+                    ECRIRE erreur il y a deja une valeur 
+                FIN SI
+            FIN SI  
+
+        CAS 4
+            SI joueur = 1
+                SI  jeu_tableau case 4 est vide
+                    case 4 = X
+                    joueur = 2
+                    EFFACER ECRAN
+                SINON
+                    EFFACER ECRAN
+                    ECRIRE erreur, il y  a deja une valeur
+                FIN SI
+            SINON 
+                SI jeu_tableau case 1 EST VIDE
+                    case 4 = O
+                    joueur = 1
+                    EFFACER ECRAN
+                SINON
+                    EFFACER ECRAN
+                    ECRIRE erreur il y a deja une valeur 
+                FIN SI
+            FIN SI  
+
+        CAS 5
+            SI joueur = 1
+                SI  jeu_tableau case 5 est vide
+                    case 5 = X
+                    joueur = 2
+                    EFFACER ECRAN
+                SINON
+                    EFFACER ECRAN
+                    ECRIRE erreur, il y  a deja une valeur
+                FIN SI
+            SINON 
+                SI jeu_tableau case 5 EST VIDE
+                    case 5 = O
+                    joueur = 1
+                    EFFACER ECRAN
+                SINON
+                    EFFACER ECRAN
+                    ECRIRE erreur il y a deja une valeur 
+                FIN SI
+            FIN SI  
+
+        CAS 6
+            SI joueur = 1
+                SI  jeu_tableau case 6 est vide
+                    case 6 = X
+                    joueur = 2
+                    EFFACER ECRAN
+                SINON
+                    EFFACER ECRAN
+                    ECRIRE erreur, il y  a deja une valeur
+                FIN SI
+            SINON 
+                SI jeu_tableau case 6 EST VIDE
+                    case 6 = O
+                    joueur = 1
+                    EFFACER ECRAN
+                SINON
+                    EFFACER ECRAN
+                    ECRIRE erreur il y a deja une valeur 
+                FIN SI
+            FIN SI  
+
+        CAS 7
+            SI joueur = 1
+                SI  jeu_tableau case 7 est vide
+                    case 7 = X
+                    joueur = 2
+                    EFFACER ECRAN
+                SINON
+                    EFFACER ECRAN
+                    ECRIRE erreur, il y  a deja une valeur
+                FIN SI
+            SINON 
+                SI jeu_tableau case 7 EST VIDE
+                    case 7 = O
+                    joueur = 1
+                    EFFACER ECRAN
+                SINON
+                    EFFACER ECRAN
+                    ECRIRE erreur il y a deja une valeur 
+                FIN SI
+            FIN SI      
+
+        CAS 8
+            SI joueur = 1
+                SI  jeu_tableau case 8 est vide
+                    case 8 = X
+                    joueur = 2
+                    EFFACER ECRAN
+                SINON
+                    EFFACER ECRAN
+                    ECRIRE erreur, il y  a deja une valeur
+                FIN SI
+            SINON 
+                SI jeu_tableau case 8 EST VIDE
+                    case 8 = O
+                    joueur = 1
+                    EFFACER ECRAN
+                SINON
+                    EFFACER ECRAN
+                    ECRIRE erreur il y a deja une valeur 
+                FIN SI
+            FIN SI  
+
+        CAS 9
+            SI joueur = 1
+                SI  jeu_tableau case 9 est vide
+                    case 9 = X
+                    joueur = 2
+                    EFFACER ECRAN
+                SINON
+                    EFFACER ECRAN
+                    ECRIRE erreur, il y  a deja une valeur
+                FIN SI
+            SINON 
+                SI jeu_tableau case 9 EST VIDE
+                    case 9 = O
+                    joueur = 1
+                    EFFACER ECRAN
+                SINON
+                    EFFACER ECRAN
+                    ECRIRE erreur il y a deja une valeur 
+                FIN SI
+            FIN SI  
+        DEFAUT:
+                EFFACER ECRAN
+                ECRIRE La valeur saisie est eronee veuiller recommencer
+            FIN SWITCH     
+                
+
+                LIRE modèle_tableau
+                ECRIRE Saisir le nombre de la case pour saisir votre choix
+                ECRIRE jeu_tableau
+                
+                SI 3 "X" sont alignés dans jeu_tableau
+                    ECRIRE Le joueur 1 gagne
+                    niv = 0
+                    go = 0
+                    ECRIRE Pour recommencer le jeu saisir 1 :
+                    LIRE go
+                    REINITIALISER jeu_tableau
+                
+                SINON SI 3 "O" sont alignés dans jeu_tableau
+                    ECRIRE Le joueur 2 gagne
+                    niv = 0
+                    go = 0
+                    ECRIRE Pour recommencer le jeu saisir 1 :
+                    LIRE go
+                    REINITIALISER jeu_tableau
+                
+                SINON SI il n'y a ni 3 "X" et ni 3 "O" alignés et que les cases soient remplies
+                    ECRIRE Match nul ! 
+                    niv = 0
+                    go = 0
+                    ECRIRE Pour recommencer le jeu saisir 1 :
+                    LIRE go
+                    REINITIALISER jeu_tableau
+                
+                FIN SI
+
+            FIN
